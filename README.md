@@ -39,3 +39,9 @@ curl -s -X POST https://moulin-time-jimvix.fly.dev/debug/meter
 - Billing via Stripe Metering. Abuse/DoS may be blocked.
 
 Made with ☕ & windmills.
+---
+
+## Code examples
+
+Ready-to-run snippets (cURL, Python, JS) → **Examples repo**  
+➡️ https://github.com/Jim-vix/moulin-time-examples
