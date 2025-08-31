@@ -1,19 +1,51 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Moulin Time — API</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Moulin Time API — bot-friendly metered API</title>
+  <meta name="description" content="Moulin Time API — time zone & recurring events. Metered pricing €0.0001 per call. Perfect for bots and automations.">
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial,sans-serif;line-height:1.5;margin:0;background:#0b0d12;color:#e8ecf1}
+    .wrap{max-width:860px;margin:0 auto;padding:48px 20px}
+    h1{font-size:2rem;margin:0 0 8px}
+    .muted{opacity:.75}
+    pre{background:#0f131a;padding:16px;border-radius:12px;overflow:auto}
+    code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}
+    .card{background:#0d1117;border:1px solid #1f2632;border-radius:16px;padding:20px;margin:16px 0}
+    a{color:#7cc7ff;text-decoration:none} a:hover{text-decoration:underline}
+    .pill{display:inline-block;border:1px solid #334054;border-radius:999px;padding:4px 10px;font-size:.9rem;margin-right:8px}
+  </style>
 </head>
 <body>
-  <h1>Bienvenue sur Moulin Time</h1>
-  <p>API de conversion de fuseaux horaires et gestion de récurrences.</p>
-  <p><a href="https://buy.stripe.com/cNi5kE8FhanT4d22nC5c400">Souscrire via Stripe</a></p>
-  <nav>
-    <a href="index.html">Accueil</a> |
-    <a href="pricing.html">Tarifs</a> |
-    <a href="privacy.html">Confidentialité</a> |
-    <a href="terms.html">Conditions</a> |
-    <a href="contact.html">Contact</a>
-  </nav>
+  <div class="wrap">
+    <h1>⚙️ Moulin Time API</h1>
+    <p class="muted">A lightweight API for time zone conversion & recurring events — <strong>bot‑friendly</strong> metered pricing.</p>
+
+    <div class="card">
+      <p><span class="pill">Base URL</span> <code>https://moulin-time-jimvix.fly.dev</code></p>
+      <p><span class="pill">Pricing</span> €0.0001 per call (metered, billed monthly via Stripe)</p>
+    </div>
+
+    <h2>Quickstart</h2>
+    <div class="card">
+      <p><strong>Healthcheck</strong></p>
+      <pre><code>curl -s https://moulin-time-jimvix.fly.dev/status
+# -&gt; {"ok":true,"service":"moulin-time"}</code></pre>
+
+      <p><strong>Count a usage event</strong></p>
+      <pre><code>curl -s -X POST https://moulin-time-jimvix.fly.dev/debug/meter
+# -&gt; {"ok":true, ... "stripe":{"object":"billing.meter_event","event_name":"api_call", ...}}</code></pre>
+      <p class="muted">Production-grade metering via Stripe (event_name=<code>api_call</code>).</p>
+    </div>
+
+    <h2>Status & Reliability</h2>
+    <ul>
+      <li>Hosted on Fly.io (Paris region)</li>
+      <li><code>/status</code> JSON for uptime monitors</li>
+    </ul>
+
+    <p class="muted">Made with ☕ &amp; windmills.</p>
+  </div>
 </body>
 </html>
