@@ -1,7 +1,7 @@
 # ⚙️ Moulin Time API
 
 A lightweight API for time zone conversion & recurring events.  
-**Pricing:** Free tier — **1000 calls/month**, then **€0.0001 per call** (metered via Stripe).
+**Pricing:** Free tier — 1000 calls/month, then €0.0001 per call (metered via Stripe).
 
 ---
 
