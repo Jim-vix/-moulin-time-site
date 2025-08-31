@@ -1,6 +1,6 @@
 # ⚙️ Moulin Time API — bot-friendly timezone & recurring events
 
-[![Visit on RapidAPI](https://img.shields.io/badge/RapidAPI-Open%20Listing-blue)](https://rapidapi.com/search/moulin%20time%20api)
+[![Visit on RapidAPI](https://img.shields.io/badge/RapidAPI-Open%20Listing-blue)](https://rapidapi.com/moulin-time-moulin-time-default/api/moulin-time-api)
 [![Live](https://img.shields.io/badge/Base%20URL-moulin--time--jimvix.fly.dev-0b7285)](https://moulin-time-jimvix.fly.dev)
 
 Tiny, always-on API for time zone conversion & recurring events.  
@@ -30,7 +30,7 @@ curl -s -X POST https://moulin-time-jimvix.fly.dev/debug/meter
 
 **Base URL:** `https://moulin-time-jimvix.fly.dev`  
 **Docs (Landing):** https://jim-vix.github.io/-moulin-time-site/  
-**RapidAPI Listing:** *(temporary search link)* https://rapidapi.com/search/moulin%20time%20api
+**RapidAPI Listing:** https://rapidapi.com/moulin-time-moulin-time-default/api/moulin-time-api
 
 ---
 
